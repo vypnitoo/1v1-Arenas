@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id("com.github.johnrengelman.shadow") version "8.1.1"
+}
+
+group = 'com.vypnito'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://repo.papermc.io/repository/maven-public/' }
+
+}
+
+dependencies {
+    compileOnly 'io.papermc.paper:paper-api:1.21-R0.1-SNAPSHOT'
+
+}
+
+shadowJar {
+    archiveFileName.set('1v1Arenas.jar')
+}
+
+processResources {
+    def props = [
+            'version': project.version,
+            'name': '1V1Arenas',
+            'main': 'com.vypnito.arena.arena'
+    ]
+    inputs.properties props
+    filesMatching('plugin.yml') {
+        expand props
+    }
+}
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(21)
+}

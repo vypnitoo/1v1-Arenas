@@ -1,0 +1,95 @@
+# SmartArenas Configuration File
+# This file manages global settings and defines all your arenas.
+
+default-arena-settings:
+  # The material used for the arena's boundary walls (e.g., GLASS, BEDROCK).
+  # Use exact Minecraft material names (e.g., OAK_PLANKS, STONE, BARRIER).
+  wall-material: "GLASS"
+  # Set to true to allow players to break blocks inside the arena.
+  allow-block-break: false
+  # Set to true to allow players to place blocks inside the arena.
+  allow-block-place: false
+  # Set to true to allow players to drop items inside the arena.
+  allow-item-drop: false
+  # Set to true to disable hunger depletion for players inside the arena.
+  disable-hunger: true
+  # The delay in seconds for the arena walls to disappear after a player dies.
+  # This acts as a cooldown before the arena becomes open again.
+  wall-removal-delay-seconds: 30
+  # List of potion effects applied to players when they enter the arena.
+  # Format: "EFFECT_NAME:AMPLIFIER" (e.g., "SPEED:1" for Speed II, "JUMP_BOOST:2" for Jump Boost III).
+  # Amplifier is 0-indexed (0 for level I, 1 for level II, etc.).
+  effects: []
+  # NEW: The number of players required to activate this arena (e.g., 2 for 1v1, 4 for 2v2).
+  required-players: 2
+
+# Message configuration for the plugin
+messages:
+  # Enable fancy Unicode text styling (ᴛʜɪѕ ɪѕ ᴇхᴀᴍᴘʟᴇ text)
+  use-fancy-unicode: true
+
+  # Game messages
+  arena-sealed: "The arena has been sealed!"
+  arena-wall-removed: "The arena wall has been removed."
+  arena-wall-removal-countdown: "The arena wall will be removed in {delay} seconds."
+  arena-opens-countdown: "Arena opens in {seconds} seconds"
+
+  # Selection tool messages
+  selection-wand-name: "Arena Selection Wand"
+  selection-wand-received: "You have received the selection wand!"
+
+  # Arena management messages
+  arena-created: "Arena '{name}' has been created successfully!"
+  arena-deleted: "Arena '{name}' has been deleted."
+  arena-not-found: "Arena '{name}' not found."
+
+  # Command messages
+  no-permission: "You don't have permission to use this command."
+  player-only: "This command can only be used by players."
+  invalid-usage: "Invalid usage. Use: {usage}"
+
+# Arena-specific settings for defining which blocks can be replaced by walls.
+arena-settings:
+  # A list of materials that are considered "replaceable" when an arena wall is built.
+  # Only blocks with these materials will be replaced by the arena wall.
+  # Solid blocks (like STONE, DIRT, WOOD) should NOT be in this list to prevent griefing.
+  # These blocks will be stored and restored to their original state when the wall disappears.
+  replaceable-materials:
+    - AIR
+    - CAVE_AIR
+    - VOID_AIR
+    - WATER
+    - LAVA
+    - TALL_GRASS
+    - SEAGRASS
+    - VINE
+    - TORCH
+    - WALL_TORCH
+    - REDSTONE_WIRE
+    - FIRE
+    - SNOW # Snow layers
+    - COBWEB
+    - SUGAR_CANE
+    - WHEAT
+    - CARROTS
+    - POTATOES
+    - BEETROOTS
+    - NETHER_WART
+    - LADDER
+    - LEVER
+    - STONE_BUTTON
+    - WOODEN_BUTTON
+    - BROWN_MUSHROOM
+    - RED_MUSHROOM
+    - DEAD_BUSH
+    - FERN
+    - LARGE_FERN
+    - FLOWER_POT
+    - OAK_SAPLING
+    - DANDELION
+    - POPPY
+    # Add any other transparent/passable blocks you deem safe to replace.
+
+# Defines all custom arenas. Do not modify manually unless you know what you are doing.
+# Use plugin commands to manage arenas (e.g., /arena create, /arena delete).
+arenas: {}

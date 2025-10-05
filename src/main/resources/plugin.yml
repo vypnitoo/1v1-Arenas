@@ -1,0 +1,16 @@
+name: SmartArenas
+main: com.vypnito.arena.Arena
+version: 1.3
+api-version: '1.17'
+author: Vypnito
+description: A dynamic region management system with a GUI editor.
+commands:
+  arena:
+    description: "Main command for the arena system."
+    usage: "/arena <subcommand>"
+    aliases: [ar]
+    permission: smartarenas.admin
+permissions:
+  smartarenas.admin:
+    description: "Allows user to manage arenas."
+    default: op
