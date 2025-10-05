@@ -3,7 +3,7 @@
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.17+-brightgreen.svg)](https://minecraft.net)
 [![Java](https://img.shields.io/badge/Java-17+-orange.svg)](https://openjdk.java.net/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/Version-1.3-purple.svg)](https://github.com/vypnitoo/1v1-Arenas/releases)
+[![Version](https://img.shields.io/badge/Version-1.0-purple.svg)](https://github.com/vypnitoo/1v1-Arenas/releases)
 
 A dynamic arena management system for Minecraft servers that creates configurable PvP arenas with automatic wall generation, player management, and advanced effect systems.
 
@@ -26,7 +26,7 @@ A dynamic arena management system for Minecraft servers that creates configurabl
 
 ## 🚀 Installation
 
-1. **Download** the latest release from the [Releases](https://github.com/YourUsername/SmartArenas/releases) page
+1. **Download** the latest release from the [Releases](https://github.com/vypnitoo/1v1-Arenas/releases) page
 2. **Place** the `SmartArenas.jar` file in your server's `plugins` folder
 3. **Start/Restart** your server to generate the configuration files
 4. **Configure** the plugin in `plugins/SmartArenas/config.yml` as needed
@@ -253,8 +253,8 @@ We welcome contributions! Please feel free to:
 Need help? Here are your options:
 
 - 📖 **Documentation:** Check this README and the [Wiki](https://github.com/YourUsername/SmartArenas/wiki)
-- 🐛 **Bug Reports:** Open an [Issue](https://github.com/YourUsername/SmartArenas/issues)
-- 💬 **Discord:** Join our [Discord Server](https://discord.gg/YourServer)
+- 🐛 **Bug Reports:** Open an [Issue](https://github.com/vypnitoo/1v1-Arenas/issues)
+- 💬 **Discord:** Join our [Discord Server](https://discord.gg/https://discord.gg/ccqyTHNF25)
 - 📧 **Email:** Contact us at support@yourproject.com
 
 ## 📄 License
@@ -273,7 +273,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <div align="center">
 
 **Made with ❤️ for the Minecraft community**
-
-[⭐ Star this repo](https://github.com/YourUsername/SmartArenas) • [🐛 Report Bug](https://github.com/YourUsername/SmartArenas/issues) • [💡 Request Feature](https://github.com/YourUsername/SmartArenas/issues)
 
 </div>
